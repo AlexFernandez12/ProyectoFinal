@@ -1,4 +1,4 @@
-body{
+.todo{
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -13,7 +13,7 @@ body{
 	height: 500px;
 	background: red;
 	overflow: hidden;
-background-color: blue;
+	background-color: blue;
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 }
