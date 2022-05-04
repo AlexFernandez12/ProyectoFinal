@@ -16,7 +16,7 @@ class BootstrapCarouselComponent extends React.Component {
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        src="https://picsum.photos/500/300?img=1"
+                                        src="https://images.pexels.com/photos/1639729/pexels-photo-1639729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                                         alt="First slide"
                                     />
                                     <Carousel.Caption>
@@ -28,7 +28,7 @@ class BootstrapCarouselComponent extends React.Component {
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        src="https://picsum.photos/500/300?img=2"
+                                        src="https://images.pexels.com/photos/58592/pexels-photo-58592.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                                         alt="Second slide"
                                     />
 
@@ -41,7 +41,7 @@ class BootstrapCarouselComponent extends React.Component {
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        src="https://picsum.photos/500/300?img=3"
+                                        src="https://images.pexels.com/photos/1884583/pexels-photo-1884583.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                                         alt="Third slide"
                                     />
                                     <Carousel.Caption>
