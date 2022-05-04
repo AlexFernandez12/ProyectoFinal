@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './components/Login'
 import Menu from './components/menu'
 import Inicio from './paginas/inicio';
-import Tienda from './components/Home/index';
+import Tienda from './components/Home/index'
 
 export default function App(){
   return (
@@ -16,11 +16,8 @@ export default function App(){
       <Routes>
         <Route path="/" element={<Inicio/> } />
         <Route path="login" element={<Login />} />
-        <Route path='/Tienda' element={<Tienda />} />
+        <Route path='/home' element={<CartProvider><Home /></CartProvider>} />
       </Routes>
-       <CartProvider>
-      <Home />
-    </CartProvider>
   </BrowserRouter>
   )
 };

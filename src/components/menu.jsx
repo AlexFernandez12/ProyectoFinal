@@ -20,7 +20,7 @@ function Navbar() {
         <div className='rightSide'>
             <Link to='/'>Inicio</Link>
             <Link to='/login'>Login</Link>
-            <Link to='/Tienda'>tienda</Link>
+            <Link to='/home'>Tienda</Link>
             <button onClick={toggleNavBar}>
                
             </button>
