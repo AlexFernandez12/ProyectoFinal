@@ -1,18 +1,24 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from './components/Login'
-import Tienda from './Tienda'
- 
- 
-export default function App(){
-  return (
-  <BrowserRouter>
-      <Routes>
-        <Route path="login" element={<Login />} />
-        <Route path="t" element={<Tienda />} />
-    </Routes>
-  </BrowserRouter>
-  )
-};
+import React from 'react'
+import { Header } from "./components/Header";
+import { Carrito } from "./components/Carrito";
+import {DataProvider} from './context/DataProvider';
+import { BrowserRouter as Router} from "react-router-dom";
+import Pages from "./components/Page.js";
+import "boxicons";
 
- 
+function App() {
+
+  return (
+    <DataProvider>
+    <div className="App">
+      <Router>
+      <Header />
+      <Carrito />
+      <Pages />
+      </Router>
+    </div>
+    </DataProvider>
+  );
+}
+
+export default App;
