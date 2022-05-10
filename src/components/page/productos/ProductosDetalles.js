@@ -47,7 +47,7 @@ export const ProductosDetalles = () => {
           <div className="grid">
           <p className="nuevo">Nuevo</p>
           <div className="tamano">
-            <select placeholder="Tamaño" >
+            <select placeholder="Talla" >
               <option value="1">32</option>
               <option value="1">33</option>
               <option value="1">34</option>
@@ -63,7 +63,7 @@ export const ProductosDetalles = () => {
               <option value="1">44</option>
               <option value="1">45</option>
             </select>
-            <p>Tamaño</p>
+            <p>Talla</p>
           </div>
           </div>
           <button onClick={() => addCarrito(detalle.id)}>
