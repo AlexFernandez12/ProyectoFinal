@@ -3,6 +3,7 @@ import { DataContext } from "context/DataProvider";
 import { Link } from "react-router-dom";
 import Nike from "images/logo.jpg";
 import Dropdown from "./Dropdown";
+import "./Navbar.css"
 
 export const Header = () => {
   const value = useContext(DataContext);
@@ -55,7 +56,7 @@ export const Header = () => {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to='/services'
+              to='/productos'
               className='nav-links'
               onClick={closeMobileMenu}
             >
