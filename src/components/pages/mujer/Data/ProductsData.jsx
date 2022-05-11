@@ -1,0 +1,23 @@
+export const ProductsData= [
+    {
+        id:4,
+        price:12,
+        amount:0,
+        name:"pantalon",
+        img:"https://www.dhresource.com/0x0/f2/albu/g12/M00/D1/E9/rBVakV87pHyAY5rYAAQEsMPkZbY807.jpg",
+    },
+    {
+        id:5,
+        price:23,
+        amount:0,
+        name:"sudadera",
+        img:"https://static.kiabi.es/images/sudadera-con-cremallera-y-capucha-azul-hombre-talla-s-xxl-yf374_1_fcf1.jpg",
+    },
+    {
+        id:6,
+        price:33,
+        amount:0,
+        name:"sudadera",
+        img:"https://static.kiabi.es/images/sudadera-con-cremallera-y-capucha-azul-hombre-talla-s-xxl-yf374_1_fcf1.jpg",
+    },
+];

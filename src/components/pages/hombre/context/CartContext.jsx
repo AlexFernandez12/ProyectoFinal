@@ -1,9 +1,9 @@
 import { createContext, useEffect, useState } from "react";
 import React from "react";
 /* Creamos el context, se le puede pasar un valor inicial */
-const CartContext = createContext();
+const CartContextHombre = createContext();
 
-export const CartProvider = ({ children }) => {
+export const CartProviderHombre = ({ children }) => {
   /* Creamos un estado para el carrito */
   const [cartItems, setCartItems] = useState(() => {
     try{
@@ -58,12 +58,12 @@ export const CartProvider = ({ children }) => {
 
   return (
     /* Envolvemos el children con el provider y le pasamos un objeto con las propiedades que necesitamos por value */
-    <CartContext.Provider
+    <CartContextHombre.Provider
       value={{ cartItems, addItemToCart, deleteItemToCart }}
     >
       {children}
-    </CartContext.Provider>
+    </CartContextHombre.Provider>
   );
 };
 
-export default CartContext;
+export default CartContextHombre;
