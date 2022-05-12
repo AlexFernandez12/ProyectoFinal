@@ -63,7 +63,7 @@ export const Carrito = () => {
             <div className="carrito__item" key={producto.id}>
               <img src={producto.image} alt={producto.title} />
               <div>
-                <h3> {producto.title} </h3>
+                <h3> {producto.title} </h3><br></br>
                 <p className="price">{producto.price}€</p>
               </div>
               <div>
