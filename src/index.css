@@ -47,7 +47,7 @@ header{
     position: fixed;
     box-sizing: border-box ;
     background-color: rgb(0, 0, 0);
-    box-shadow: 0 10px 10px white;
+    box-shadow: 0 10px 10px rgb(194, 181, 181);
 }
 a{      
     color: rgb(255, 255, 255);
@@ -427,6 +427,63 @@ header ul li a{
     font-family: Helvetica, sans-serif
     ;
 }
+
+/* ------------- CONTACTO --------- */
+.form{
+    width:340px;
+    height:440px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    }
+
+.tit{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:#78788c;
+    border-bottom:3px solid #78788c;
+}
+.cuadro{width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    border-bottom:2px solid #bebed2;
+}
+.enviar_mensaje{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+span{
+    margin:0 5px 0 15px
+}
+.contactar{
+    margin-top: 130px;
+    background:#50505a;
+    color:#fff;
+    width:280px;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000;
+    text-align: center;
+}
+
+
 
 
 /* -------------MEDIA -------------*/

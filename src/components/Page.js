@@ -3,6 +3,7 @@ import { Switch, Route} from "react-router-dom";
 import Inicio from "./page/inicio";
 import { ProductosList } from "./page/productos";
 import { ProductosDetalles } from "./page/productos/ProductosDetalles";
+import  Servicios  from "./page/servicios";
 import Login from "./Login/Login";
 
 export default function Page() {
@@ -13,6 +14,7 @@ export default function Page() {
         <Route path="/login" exact component={Login} />
 				<Route path="/productos" exact component={ProductosList} />
         <Route path="/producto/:id" exact component={ProductosDetalles} />
+        <Route path="/servicios" exact component={Servicios} />
 			</Switch>
     </section>
   );
