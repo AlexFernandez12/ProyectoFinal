@@ -1,5 +1,4 @@
 import React from 'react'
-import "./servicios.css"
 import { Link } from "react-router-dom";
 import Portada from "images/inicio.jpg";
 
