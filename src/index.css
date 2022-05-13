@@ -321,13 +321,13 @@ header ul li a{
 .carrito__item .cantidad{
     font-size: 2rem;
     font-weight: bold;
-    margin-left: -15px;
+    margin-left: -3px;
 }
 .carrito__item .remove__item box-icon{
     width: 60px;
-    height: 80px;
+    height: 45px;
     fill:  crimson;
-    margin-top: 3.5rem;
+    margin-top: 3rem;
     margin-left: -125px;
 }
 .carrito__footer{

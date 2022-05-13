@@ -71,8 +71,8 @@ export const Header = () => {
         <Link to="/login">Sign up</Link>
         </li>
       </ul>
-      <div className="cart" onClick={toogleMenu}>
-        <box-icon name="shopping-bag"></box-icon>
+      <div onClick={toogleMenu}>
+        <box-icon name="cart"></box-icon>
         <span className="item__total">Carrito {carrito.length} </span>
       </div>
     </header>
