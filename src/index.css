@@ -38,6 +38,7 @@ code {
 
 /* ----------------- HEADER -------------------*/
 header{
+    position: absolute;
     width: 97%;
     overflow: hidden;
     display: flex;
@@ -477,7 +478,7 @@ header ul li a{
 }
 
 /* ------------- CONTACTO --------- */
-.form{
+.form_contacto{
     width:340px;
     height:440px;
     background:#e6e6e6;

@@ -14,7 +14,7 @@ export default function Servicios() {
   } 
     return (
         <div className="inicio">   
-               <form class="form" onSubmit={sendEmail}>
+               <form class="form_contacto" onSubmit={sendEmail}>
   <h2 className='tit'>CONTACT US</h2>
   <p type="Name:"><input placeholder="Escriba su nombre" className='cuadro'></input></p>
   <p type="Email:"><input placeholder="Escriba su email" className='cuadro'></input></p>
