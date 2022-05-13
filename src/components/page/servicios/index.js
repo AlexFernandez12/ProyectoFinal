@@ -5,7 +5,7 @@ export default function Servicios() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_6z9klu3', 'template_0xvjt49', e.target, 'Alejandro Fernández')
+    emailjs.sendForm('service_6z9klu3', 'template_0xvjt49', e.target, 'y--EKdEHLNw4fMDW4')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
