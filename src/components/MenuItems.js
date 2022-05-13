@@ -1,17 +1,17 @@
 export const MenuItems = [
     {
       title: 'Hombre',
-      path: '/hombre',
+      path: '/productos/hombre',
       cName: 'dropdown-link'
     },
     {
       title: 'Mujer',
-      path: '/consulting',
+      path: '/mujer',
       cName: 'dropdown-link'
     },
     {
       title: 'Niños',
-      path: '/design',
+      path: '/niños',
       cName: 'dropdown-link'
     },
     {

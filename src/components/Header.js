@@ -67,14 +67,14 @@ export const Header = () => {
         <li>
         <Link to="/servicios">SERVICIOS</Link>
         </li>
+        <li>
+        <Link to="/login">Sign up</Link>
+        </li>
       </ul>
       <div className="cart" onClick={toogleMenu}>
         <box-icon name="shopping-bag"></box-icon>
         <span className="item__total">Carrito {carrito.length} </span>
       </div>
-      <div className="log">
-      <Link to="/login">Sign up</Link>
-     </div>
     </header>
   );
 };

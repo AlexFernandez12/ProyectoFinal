@@ -1,13 +1,11 @@
 import React from 'react'
 import emailjs from 'emailjs-com';
-import { Link } from "react-router-dom";
-import Portada from "images/inicio.jpg";
 
 export default function Servicios() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+    emailjs.sendForm('service_6z9klu3', 'template_0xvjt49', e.target, 'Alejandro Fernández')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
