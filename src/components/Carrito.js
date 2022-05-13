@@ -86,7 +86,7 @@ export const Carrito = () => {
               </div>
             </div>
 					))
-				};
+				}
 					
 					</>
 					}
@@ -94,7 +94,7 @@ export const Carrito = () => {
 
         <div className="carrito__footer">
           <h3>Total: {total}€</h3>
-          <button className="btn">Pago</button>
+          <a href="https://www.paypal.com/es/home"><button className="btn">Pago</button></a>
         </div>
       </div>
     </div>

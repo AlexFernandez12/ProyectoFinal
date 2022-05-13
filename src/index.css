@@ -17,7 +17,7 @@ code {
     width: 100%;
     min-height: 100vh;
     margin: auto;
-    box-shadow: 0 2px 6px #08a05ca4;;
+    box-shadow: 0 2px 6px cyan;;
     padding: 0 15px;
     box-sizing: border-box;
 
@@ -30,7 +30,7 @@ code {
 }
 .inicio h1{
     font-size: 2.5rem;
-    color: #08a05c;
+    color: cyan;
 }
 .inicio img{
     width: 100%;
@@ -141,7 +141,7 @@ header ul li a{
 .produ{
     font-size: 2.4rem;
     padding: 10rem 0 0 0;
-    color: #08a05c;
+    color: cyan;
 }
 .productos{
     padding: 5rem 3rem;
@@ -161,7 +161,7 @@ header ul li a{
     border-radius: 5px;
 }
 .producto:hover{
-    border: 6px solid #08a05c57;
+    border: 6px solid cyan;
     ;
 }
 .producto__img img{
@@ -210,8 +210,9 @@ header ul li a{
     font-weight: 600;
 }
 .bottom div{
-    background-color:#08a05c;
+    background-color:cyan;
     display: grid;
+    height: 40px;
     align-items: center;
     text-align: center;
     margin-left: -2rem;
@@ -277,7 +278,7 @@ header ul li a{
     fill: crimson;
 }
 .carrito__center{
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
 }
 .carrito__item{
@@ -307,10 +308,11 @@ header ul li a{
     font-size: 2rem;
     font-weight: bold;
     text-align: start;
-    margin-left: -17rem ;
+    margin-left: -1rem ;
+    margin-top: -1rem;
 }
 .carrito__item box-icon{
-    fill:#08a05c;
+    fill:crimson;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -319,12 +321,14 @@ header ul li a{
 .carrito__item .cantidad{
     font-size: 2rem;
     font-weight: bold;
+    margin-left: -15px;
 }
 .carrito__item .remove__item box-icon{
     width: 60px;
     height: 80px;
     fill:  crimson;
-    margin-top: 2rem;
+    margin-top: 3.5rem;
+    margin-left: -125px;
 }
 .carrito__footer{
     text-align: center;
@@ -339,13 +343,13 @@ header ul li a{
     display: inline-block;
     padding: .3rem 1rem;
     font-size: 1.2rem;
-    background-color: #08a05c;
+    background-color: cyan;
     border: 0;
     outline: 0;
     cursor: pointer;
 }
 .carrito__footer .btn:hover{
-    background-color: #0f5c39;
+    background-color: cyan;
     color: white;
 }
 /*--------------DETALLES --------------*/
@@ -382,6 +386,21 @@ header ul li a{
     border-radius: 8px;
     cursor: pointer;
 }
+#btnCarrito{
+    max-width: 190px;
+    height: 100px;
+    margin: 1rem 0 0 0;
+    padding: 1rem 1rem;
+    border: none;
+    outline: 0;
+    background-color: #3033d3;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 .detalles .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -397,7 +416,7 @@ header ul li a{
    
 }
 .detalles .grid .nuevo{
-    background-color:#08a05c;
+    background-color:cyan;
     
 }
 .detalles .grid .tamano{
@@ -437,6 +456,7 @@ header ul li a{
     font-size: 1.4rem;
     color: #30333a;
 }
+
 
 
 
