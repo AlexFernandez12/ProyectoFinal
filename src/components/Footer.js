@@ -17,10 +17,10 @@ export const Footer = () => {
         <a href="https://www.youtube.com/">
           <FaYoutube size="40"  color="#fff"/>
         </a>  
-        <a href="https://www.youtube.com/">
+        <a href="https://twitter.com/?lang=es">
           <FaTwitter size="40"  color="#fff"/>
         </a>  
-        <a href="https://www.youtube.com/">
+        <a href="https://es-es.facebook.com/">
           <FaFacebook size="40"  color="#fff"/>
         </a>
       </div>
