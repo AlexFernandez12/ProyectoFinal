@@ -3,6 +3,7 @@ import { DataContext } from "context/DataProvider";
 import { Link } from "react-router-dom";
 import Nike from "images/logo.jpg";
 import Dropdown from "./Dropdown";
+import { BiCart } from "react-icons/bi";
 import "./Navbar.css"
 
 export const Header = () => {
@@ -71,9 +72,9 @@ export const Header = () => {
         <Link to="/login">Sign up</Link>
         </li>
       </ul>
-      <div onClick={toogleMenu}>
-        <box-icon name="cart"></box-icon>
-        <span className="item__total">Carrito {carrito.length} </span>
+      <div className="cart" onClick={toogleMenu}>
+        <BiCart size="40"  color="#fff"/>
+        <span className="item__total"> {carrito.length} </span>
       </div>
     </header>
   );
