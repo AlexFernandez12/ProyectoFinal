@@ -377,7 +377,7 @@ header ul li a{
 .detalles button{
     max-width: 300px;
     margin: 1rem 0 0 0;
-    padding: 1rem 1rem;
+    padding: 2rem 2rem;
     border: none;
     outline: 0;
     background-color: #3033d3;
@@ -395,7 +395,7 @@ header ul li a{
     border: none;
     outline: 0;
     background-color: #3033d3;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     color: white;
     font-weight: 600;
     border-radius: 8px;
@@ -435,7 +435,7 @@ header ul li a{
 .detalles img{
     min-height: 300px;
     object-fit: contain;
-    margin-top:  -7rem;
+    margin-top:  5rem;
     z-index: -1;
 }
 .detalles input{

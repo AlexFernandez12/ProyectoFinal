@@ -66,7 +66,7 @@ export const Header = () => {
             {dropdown && <Dropdown />}
           </li>
         <li>
-        <Link to="/servicios">SERVICIOS</Link>
+        <Link to="/servicios">Contacto</Link>
         </li>
         <li>
         <Link to="/login">Sign up</Link>

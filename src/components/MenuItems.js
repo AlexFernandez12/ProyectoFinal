@@ -6,12 +6,12 @@ export const MenuItems = [
     },
     {
       title: 'Mujer',
-      path: '/mujer',
+      path: '/productos/mujer',
       cName: 'dropdown-link'
     },
     {
       title: 'Niños',
-      path: '/niños',
+      path: '/productos/niños',
       cName: 'dropdown-link'
     },
     {
