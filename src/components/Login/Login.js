@@ -78,7 +78,7 @@ class Login extends React.Component{
 
 			<div class="signup">
 				<form>
-					<label for="chk" aria-hidden="true">Sign up</label>
+					<label for="chk" aria-hidden="true">Registrate</label>
 					<input type="text" name="txt" placeholder="Usuario" required=""></input>
 					<input type="email" name="email" placeholder="Correo electrónico" required="" value={this.state.valor} onChange={this.cambio}></input>
 					<input type="password" name="pswd" placeholder="Contraseña" required="" value={this.state.valor_password} onChange={this.cambioPassword}></input>
@@ -87,7 +87,7 @@ class Login extends React.Component{
 			</div>
             <div class="login">
 				<form>
-					<label for="chk" aria-hidden="true">Login</label>
+					<label for="chk" aria-hidden="true">Inicia sesión</label>
 					<input type="email" name="email" placeholder="Correo electrónico" required="" value={this.state.valor} onChange={this.cambio}></input>
 					<input type="password" name="pswd" placeholder="Contraseña" required="" value={this.state.valor_password} onChange={this.cambioPassword}></input>
 					<button onClick={this.iniciar}>Iniciar</button>

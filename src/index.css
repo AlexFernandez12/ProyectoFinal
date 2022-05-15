@@ -25,12 +25,18 @@ code {
 /*-----------------INICIO-------------------*/
 .inicio{
     width: 100%;
-    margin: 0 auto;
-    padding-top: 9rem ;
+    color: black;
 }
 .inicio h1{
     font-size: 1.75rem;
-    color: cyan;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+.inicio h1:hover{
+    color: black;
+    background-color: white;
+    transform: scale(1.0);
 }
 .inicio img{
     width: 100%;
@@ -38,14 +44,10 @@ code {
 
 /* ----------------- HEADER -------------------*/
 header{
-    position: absolute;
-    width: 97%;
-    overflow: hidden;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    position: fixed;
     box-sizing: border-box ;
     background-color: rgb(0, 0, 0);
     box-shadow: 0 10px 10px rgb(194, 181, 181);
@@ -89,7 +91,7 @@ li{
     height: 100%;
     width: 100%;
     text-decoration: none;
-    color: cyan;
+    color: white;
     padding: 16px;
   }
 header ul{
@@ -135,7 +137,6 @@ header ul li a{
     color: white;
     padding: 0rem;
     font-size: 1.5rem;
-    
 }
 
 /*----------- PRODUCTOS ------------*/
@@ -163,7 +164,6 @@ header ul li a{
 }
 .producto:hover{
     border: 6px solid cyan;
-    ;
 }
 .producto__img img{
     width: 310px;
@@ -175,8 +175,7 @@ header ul li a{
     font-weight: 600;
     font-size: 1.5rem;
     color: #1a202c;
-    font-family: Helvetica, sans-serif
-    ;
+    font-family: Helvetica, sans-serif;
 }
 .producto__footer p{
     font-weight: 700;
