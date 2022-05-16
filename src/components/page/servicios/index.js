@@ -12,6 +12,7 @@ export default function Servicios() {
           alert ("Petición enviada correctamente");
       }, (error) => {
           console.log(error.text);
+          alert ("Error al enviar");
       });
   } 
     return (
