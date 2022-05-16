@@ -508,8 +508,8 @@ header ul li a{
 }
 .enviar_mensaje{
     float:right;
-    padding:8px 12px;
-    margin:8px 0 0;
+    padding:16px;
+
     font-family:'Montserrat',sans-serif;
     border:2px solid #78788c;
     background:0;
