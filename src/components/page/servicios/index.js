@@ -14,6 +14,7 @@ export default function Servicios() {
           console.log(error.text);
           alert ("Error al enviar");
       });
+      
   } 
     return (
         <div className="inicio">   
@@ -21,7 +22,7 @@ export default function Servicios() {
   <h2 className='tit'>CONTACT US</h2>
   <p type="Name:"><input placeholder="Escriba su nombre" className='cuadro' name='name'></input></p>
   <p type="Email:"><input placeholder="Escriba su email" className='cuadro' name='subject'></input></p>
-  <p type="Message:"><input placeholder="Cuentenos su problema" className='cuadro' name='email'></input></p>
+  <p type="Message:"><textarea placeholder="Cuentenos su problema" className='cuadro' name='email'></textarea></p>
   <input type="submit" value="Send" className='enviar_mensaje' />
 
   <div className='contactar'>
