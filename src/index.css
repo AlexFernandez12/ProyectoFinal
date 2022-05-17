@@ -35,6 +35,24 @@ code {
 .inicio img{
     width: 100%;
 }
+.caja1{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.caja1 img{
+    height: 500px;
+    width: 550px;
+}
+.caja2{
+    margin-top: 95px;
+    display: flex;
+    justify-content: space-between;
+}
+.caja2 img{
+    height: 350px;
+    width: 400px;
+}
 
 /* ----------------- HEADER -------------------*/
 header{
@@ -588,8 +606,9 @@ span{
 
 @media only screen and (max-width: 570px){
     header ul{
-        display: none;
+        display: block;
     }
+
     .productos{
         padding: 0;
     }
