@@ -45,7 +45,6 @@ export const ProductosDetalles = () => {
           <h2>{detalle.title}</h2>
           <p className="price">{detalle.price}€</p>
           <div className="grid">
-          <p className="nuevo">Nuevo</p>
           <div className="tamano">
             <select placeholder="Talla" >
               <option value="1">32</option>
