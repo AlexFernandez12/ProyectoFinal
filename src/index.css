@@ -31,21 +31,25 @@ code {
 .inicio h1{
     font-size: 1.75rem;
     color: cyan;
+    text-align: center;
 }
 .inicio img{
     width: 100%;
 }
 .caja1{
-    margin-top: 15px;
+    margin-top: 35px;
     display: flex;
     justify-content: space-around;
+    
 }
 .caja1 img{
     height: 500px;
     width: 550px;
+
 }
+
 .caja2{
-    margin-top: 95px;
+    margin-top: 35px;
     display: flex;
     justify-content: space-between;
 }
