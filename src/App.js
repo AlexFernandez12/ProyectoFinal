@@ -1,35 +1,26 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import './App.css';
-import Inicio from './components/pages/Inicio'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
-import ContactUs from './components/pages/ContactUs';
-import SignUp from './components/pages/SignUp';
-import Hombre from './components/pages/g/inicio';
-import Mujer from "./components/pages/mujer/componentes/Home/index"
-import { CartProviderHombre } from "./components/pages/hombre/context/CartContext";
-import { CartProviderMujer } from "./components/pages/mujer/context/CartContext";
-
-
-
-
+import React from 'react'
+import { Header } from "./components/Header";
+import { Carrito } from "./components/Carrito";
+import {DataProvider} from './context/DataProvider';
+import { BrowserRouter as Router} from "react-router-dom";
+import Pages from "./components/Page.js";
+import "boxicons";
+import {Footer} from "./components/Footer";
+import Login from "./components/Login/Login.js";
 
 function App() {
+
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path='/' exact element={<Inicio />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/products' element={<Products />} />
-        <Route path='/contact-us' element={<ContactUs />} />
-        <Route path='/sign-up' element={<SignUp />} />
-        <Route path='/hombre' element={<Hombre />} />
-        <Route path='/consulting' element={<CartProviderMujer><Mujer /></CartProviderMujer>} />
-      </Routes>
-    </Router>
+    <DataProvider>
+    <div className="App">
+      <Router>
+      <Header />
+      <Carrito />
+      <Pages />
+      <Footer />
+      </Router>
+    </div>
+    </DataProvider>
   );
 }
 
