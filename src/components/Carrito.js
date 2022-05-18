@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import Card from "images/img02.jpg";
 import { DataContext } from "context/DataProvider";
+import { DataContextHombreCamisetas } from "components/page/hombre/camisetas/context/DataProviderHombreCamisetas";
 //import { DataContextMujer } from "context/DataProviderMujer";
 //import { DataContextHombre } from "context/DataProviderHombre";
 
 
 export const Carrito = () => {
-  const value = useContext(DataContext /*DataContextHombre, DataContextMujer*/);
+  const value = useContext(DataContext, DataContextHombreCamisetas);
   const [menu, setMenu] = value.menu;
   const [carrito, setCarrito] = value.carrito;
   const [total] = value.total;

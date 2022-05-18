@@ -59,7 +59,7 @@ export const Header = () => {
           onMouseLeave={onMouseLeave}
         >
           <Link
-            to='/productos'
+            to='/'
             className='nav-links'
             onClick={closeMobileMenu}
           >

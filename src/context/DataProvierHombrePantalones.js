@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
-import Data from "components/page/hombre/pantalones/context/DataHombrePantalones.js";
+import Data from "DataHombre";
 
 export const DataContext = createContext();
 

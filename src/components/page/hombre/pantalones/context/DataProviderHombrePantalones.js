@@ -1,9 +1,9 @@
 import React, { createContext, useState, useEffect } from "react";
-import Data from "components/page/hombre/pantalones/context/DataHombrePantalones.js";
+import Data from "components/page/hombre/pantalones/context/DataHombrePantalones";
 
-export const DataContext = createContext();
+export const DataContextHombrePantalones = createContext();
 
-export const DataProvider = (props) => {
+export const DataProviderHombrePantalones = (props) => {
 	const [productos, setProductos] = useState([]);
 	const [menu, setMenu] = useState(false)
 	const [carrito, setCarrito] =useState([])
@@ -63,8 +63,8 @@ export const DataProvider = (props) => {
 		total: [total, setTotal]
 	}
 	return (
-		<DataContext.Provider value={value}>
+		<DataContextHombrePantalones.Provider value={value}>
 			{props.children}
-		</DataContext.Provider>
+		</DataContextHombrePantalones.Provider>
 	)
 };

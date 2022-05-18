@@ -10,7 +10,7 @@ export default function Inicio() {
                     <img src="https://i.ibb.co/bPmVXyP/black-converse.png"></img>
                     <h1>Productos</h1>
                 </Link>
-                <Link to="/productos/hombre">
+                <Link to="/hombre">
                     <img src='https://i.ibb.co/55z32tw/long-sleeve.png'></img>
                     <h1>Hombre</h1>
                 </Link>

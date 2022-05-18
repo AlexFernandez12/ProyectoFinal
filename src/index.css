@@ -408,6 +408,7 @@ header ul li a{
     font-weight: 600;
     border-radius: 8px;
     cursor: pointer;
+    display: block;
 }
 #btnCarrito{
     max-width: 190px;
