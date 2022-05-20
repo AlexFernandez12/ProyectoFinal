@@ -3,7 +3,7 @@ import { DataContextNinosSudadera } from "components/page/Tienda/ninos/sudadera/
 import { useParams } from "react-router-dom";
 import { ProductoItemNinosSudadera } from './ProductoItemNinosSudadera';
 
-export const ProductosDetallesNinos = () => {
+export const ProductosDetallesNinosSudadera = () => {
   const value = useContext(DataContextNinosSudadera);
   const [productos] = value.productos;
   const addCarrito = value.addCarrito;

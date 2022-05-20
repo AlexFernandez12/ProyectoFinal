@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { ProductoItemAccesorios } from './ProductoItemAccesorios';
 
 export const ProductosDetallesAccesorios = () => {
-  const value = useContext(DataContextAccesoriosCamisetas);
+  const value = useContext(DataContextAccesorios);
   const [productos] = value.productos;
   const addCarrito = value.addCarrito;
   const [detalle, setDetalle] = useState([])
@@ -89,7 +89,7 @@ export const ProductosDetallesAccesorios = () => {
         productos.map((producto)=>{
           if((item < 6)&&(detalle.category === producto.category)){
             item++;
-          return <ProductoItemAccesoriosCamisetas 
+          return <ProductoItemAccesorios
           key={producto.id}
           title={producto.title}
           image={producto.image}

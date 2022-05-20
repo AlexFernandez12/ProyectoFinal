@@ -3,7 +3,7 @@ import { DataContextHombrePantalones } from "components/page/Tienda/hombre/panta
 import { useParams } from "react-router-dom";
 import { ProductoItemHombrePantalones } from './ProductoItemHombre';
 
-export const ProductosDetallesHombre = () => {
+export const ProductosDetallesHombrePantalones = () => {
   const value = useContext(DataContextHombrePantalones);
   const [productos] = value.productos;
   const addCarrito = value.addCarrito;

@@ -25,7 +25,7 @@ export const ProductoItemNinosZapatos = ({title, image, category, price, id}) =>
       <div className="bottom">
         <button onClick={() => addCarrito(id)} className="btn">Añadir al carrito</button>
         <div>
-        <Link to={`/ninos/pantalones/${id}`} className="btn">Vista</Link>
+        <Link to={`/ninos/zapatos/${id}`} className="btn">Vista</Link>
         </div>
       </div>
     </div>

@@ -6,7 +6,6 @@ import { BrowserRouter as Router} from "react-router-dom";
 import Pages from "./components/Page.js";
 import "boxicons";
 import {Footer} from "./components/Footer";
-import Login from "./components/Login/Login.js";
 import {DataProviderHombrePantalones} from './components/page/Tienda/hombre/pantalones/context/DataProviderHombrePantalones';
 import {DataProviderHombreCamisetas} from './components/page/Tienda/hombre/camisetas/context/DataProviderHombreCamisetas';
 import { DataProviderHombreSudadera } from 'components/page/Tienda/hombre/sudadera/context/DataProviderHombreSudadera';

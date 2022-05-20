@@ -1,9 +1,9 @@
 import React, {useContext, useEffect, useState} from 'react'
 import { DataContextHombreZapatos } from "components/page/Tienda/hombre/zapatos/context/DataProviderHombreZapatos";
 import { useParams } from "react-router-dom";
-import { ProductoItemHombreSudadera } from './ProductoItemHombreZapatos';
+import { ProductoItemHombreZapatos } from './ProductoItemHombreZapatos';
 
-export const ProductosDetallesHombre = () => {
+export const ProductosDetallesHombreZapatos = () => {
   const value = useContext(DataContextHombreZapatos);
   const [productos] = value.productos;
   const addCarrito = value.addCarrito;
