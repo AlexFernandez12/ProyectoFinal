@@ -72,6 +72,9 @@ class Login extends React.Component{
 
 
    return(
+    <div className="inicio" style={{
+      backgroundImage: 'url("https://www.zurweb.com/wp-content/uploads/2020/03/fondo-contacto.jpg")'
+    }}> 
        <div className='todo'>
            <div class="main">  	
 		<input type="checkbox" id="chk" aria-hidden="true"></input>
@@ -94,6 +97,7 @@ class Login extends React.Component{
 				</form>
 			</div>
             </div>
+      </div>
       </div>
     );
 
