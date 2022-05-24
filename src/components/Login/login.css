@@ -9,6 +9,7 @@
 	background: url();
 	
 }
+
 .main{
 	width: 350px;
 	height: 500px;
@@ -16,7 +17,8 @@
 	background-color: cyan;
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
-	margin-top: 170px;
+	margin-left: auto;
+    margin-right: auto;
 }
 #chk{
 	display: none;
@@ -87,4 +89,33 @@ button:hover{
 }
 #chk:checked ~ .signup label{
 	transform: scale(.6);
+}
+.izq_log{
+    width: 50%;
+
+}
+.izq_log img{
+    width: 100%;
+    opacity: 0.7;
+}
+.der_log{
+    width:55% ;
+    box-shadow: -10px 0px 10px -10px white;
+}
+@media screen and (max-width: 960px){
+    .izq_log{
+        display: none;   
+    }
+    .der_log{
+        width:100% ;
+        background: url('images/login.jpg');
+        background-size:cover;
+
+    }
+	.todo{
+		display: contents;
+	}
+	.sesion{
+		margin-top: 0%;
+	}
 }

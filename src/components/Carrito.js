@@ -34,7 +34,7 @@ export const Carrito = () => {
 	}
 
 	const removeProducto = id =>{
-		if(window.confirm("¿Quieres suspender el producto?")){
+		if(window.confirm("¿Quieres eliminar el producto seleccionado?")){
 			carrito.forEach((item, index)=>{
 				if(item.id === id){
 					item.cantidad = 1;
@@ -98,7 +98,7 @@ export const Carrito = () => {
 
         <div className="carrito__footer">
           <h3>Total: {total}€</h3>
-          <a href="https://www.paypal.com/es/home"><button className="btn">Pago</button></a>
+          <a href="https://www.paypal.com/es/home"><button className="btn">Pagar</button></a>
         </div>
       </div>
     </div>

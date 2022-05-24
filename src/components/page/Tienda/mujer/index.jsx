@@ -19,7 +19,7 @@ export default function index() {
                 </Link>
             </div>
         </div>
-        <div className='caja2'>
+        <div className='caja1'>
             <div className='categoria'>
                 <Link to="/mujer/pantalones">
                     <img src='https://http2.mlstatic.com/D_NQ_NP_777057-CBT47947783428_102021-W.jpg'></img>

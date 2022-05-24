@@ -24,7 +24,7 @@ export const Footer = () => {
           <FaFacebook size="40"  color="#fff"/>
         </a>
       </div>
-      <p className="footer__copyright">Bienvenido a nuestra web de compras. Aqui puedes observar todas nuestras redes sociales</p>
+      <p className="footer__copyright">Bienvenido a nuestra web de compras. Aquí puedes observar todas nuestras redes sociales</p>
     </footer>
   );
 };

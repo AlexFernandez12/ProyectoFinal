@@ -21,7 +21,7 @@ code {
 /*-----------------INICIO-------------------*/
 .inicio{
     width: 100%;
-    margin: 0 auto;
+    margin-block-end: 5%;
 }
 .inicio h1{
     font-size: 1.75rem;
@@ -547,18 +547,43 @@ span{
     margin-top: 130px;
     background:#50505a;
     color:#fff;
-    width:280px;
+    width:100%;
     padding:16px 4px 16px 0;
     border-radius:6px;
     font-size:13px;
     box-shadow:10px 10px 40px -14px #000;
     text-align: center;
 }
+.contacto{
+    display: flex;
+}
+.izq{
+    width: 50%;
+
+}
+.izq img{
+    width: 100%;
+    opacity: 0.7;
+}
+.der{
+    width:55% ;
+    box-shadow: -10px 0px 10px -10px white;
+}
+@media screen and (max-width: 960px){
+    .izq{
+        display: none;   
+    }
+    .der{
+        width:100% ;
+        background: url('images/contacto.jpg');
+        background-size: cover;
+
+    }
+}
 
 /* ------------- FOOTER --------- */
 .footer {
     height: 100px;
-    margin-top: 80px;
     background-color: rgb(0, 0, 0);
     overflow: hidden;
     display: flex;

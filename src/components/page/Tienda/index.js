@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import Portada from "images/img023.jpg";
 
 export default function Inicio() {
     return (
