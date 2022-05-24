@@ -10,10 +10,12 @@ export default function Servicios() {
       .then((result) => {
           console.log(result.text);
           alert ("La petición ha sido enviada con éxito");
+          e.target.reset();
       }, (error) => {
           console.log(error.text);
           alert ("Error al enviar la petición");
       });
+      
       
   } 
     return ( 
@@ -24,7 +26,7 @@ export default function Servicios() {
 <form  ref={form} class="form_contacto" onSubmit={sendEmail}>
   <h2 className='tit'>CONTACTANOS</h2>
   <p type="Name:"><input placeholder="Nombre" className='cuadro' name='name'></input></p>
-  <p type="Email:"><input placeholder="Email" className='cuadro' name='subject'></input></p>
+  <p type="Email:"><input type="email" placeholder="Email" className='cuadro' name='subject'></input></p>
   <p type="Message:"><textarea placeholder="Cuéntenos su problema" className='cuadro' name='email'></textarea></p>
   <input type="submit" value="Enviar" className='enviar_mensaje' />
 
