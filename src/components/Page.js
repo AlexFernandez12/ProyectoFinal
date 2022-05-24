@@ -3,7 +3,7 @@ import { Switch, Route} from "react-router-dom";
 import Inicio from "./page/Tienda";
 import  Servicios  from "./page/servicios";
 import Login from "./Login/Login";
-import D from "./page/Tienda"
+import D from "./page/inicio/index"
 
 import { ProductosList } from "./page/productos";
 import { ProductosDetalles } from "./page/productos/ProductosDetalles";
