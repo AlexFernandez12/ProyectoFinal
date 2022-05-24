@@ -56,7 +56,7 @@ export default function Page() {
 				<Route path="/" exact component={D} />
         <Route path="/login" exact component={Login} />
         <Route path="/inicio" exact component={Inicio} />
-        <Route path="/servicios" exact component={Servicios} />
+        <Route path="/contacto" exact component={Servicios} />
 
 				<Route path="/productos" exact component={ProductosList} />
         <Route path="/producto/:id" exact component={ProductosDetalles} />

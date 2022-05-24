@@ -78,7 +78,7 @@ export const Header = () => {
         </li>
         <li className='nav-item'>
           <Link
-            to='/servicios'
+            to='/contacto'
             className='nav-links'
             onClick={closeMobileMenu}
           >
