@@ -1,5 +1,6 @@
 <?php
 include("BaseDatos.php");//incluimos la pagina conexion.php
+include("cabecera.php")
 
 $usuario = $_POST['usuario'];//cogemos los valores de nombre con el post y los guardamos en una variable
 $password = $_POST['password'];

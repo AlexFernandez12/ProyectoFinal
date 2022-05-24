@@ -56,7 +56,7 @@ class Login extends React.Component {
     datos.append('email', this.state.valor_email)
     //datos.append('usuario',localStorage.getItem('nombrar') )
 
-    fetch("http://sql109.epizy.com/htdocs/Insertar_login.php", {
+    fetch('${Constantes.RUTA_API}/Insertar_login.php', {
       method: 'POST',
       body: datos
     })
