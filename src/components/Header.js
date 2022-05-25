@@ -5,7 +5,7 @@ import Logo from "../images/bellaco.png";
 import Dropdown from "./Dropdown";
 import { BiCart } from "react-icons/bi";
 import "./Navbar.css"
-import { Button } from "./Button";
+import { Button } from "./Login/Button";
 
 export const Header = () => {
   const value = useContext(DataContext);
