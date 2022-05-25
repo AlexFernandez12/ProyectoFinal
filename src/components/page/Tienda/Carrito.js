@@ -99,7 +99,7 @@ export const Carrito = () => {
 
         <div className="carrito__footer">
           <h3>Total: {total}€</h3>
-          <Link to={'/pago'}><button className="btn">Pagar</button></Link>
+		  <div onClick={tooglefalse} className="carrito__close"><Link to={'/pago'}><button className="btn">Pagar</button></Link></div>
         </div>
       </div>
     </div>
