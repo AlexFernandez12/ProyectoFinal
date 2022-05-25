@@ -16,14 +16,14 @@ const D = () => {
 		<main>
       {/* <img src={img5} alt=""/> */}
       <div className='slidefotos'>
-			<Titulo>Productos Destacados</Titulo>
+			<Titulo>Categorías</Titulo>
 			<Slideshow controles={true}>
 				<Slide>
 					<Link to={'/hombre'}>
 						<img src={img1} alt=""/>
 					</Link>
 					<TextoSlide>
-						<p>15% descuento en productos Apple</p>
+						<p>HOMBRE</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
@@ -31,7 +31,7 @@ const D = () => {
 						<img src={img2} alt=""/>
 					</a>
 					<TextoSlide>
-						<p>15% descuento en productos Apple</p>
+						<p>MUJER</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
@@ -39,7 +39,7 @@ const D = () => {
 						<img src={img3} alt=""/>
 					</a>
 					<TextoSlide>
-						<p>15% descuento en productos Apple</p>
+						<p>NIÑOS</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
@@ -47,7 +47,7 @@ const D = () => {
 						<img src={img4} alt=""/>
 					</a>
 					<TextoSlide>
-						<p>15% descuento en productos Apple</p>
+						<p>ACCESORIOS</p>
 					</TextoSlide>
 				</Slide>
 			</Slideshow>

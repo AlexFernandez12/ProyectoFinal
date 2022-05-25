@@ -160,12 +160,12 @@ const Boton = styled.button`
 	text-align: center;
 	position: absolute;
 	transition: .3s ease all;
-	/* &:hover {
+	&:hover {
 		background: rgba(0,0,0,.2);
 		path {
 			fill: #fff;
 		}
-	} */
+	}
 
 	path {
 		filter: ${props => props.derecho ? 'drop-shadow(-2px 0px 0px #fff)' : 'drop-shadow(2px 0px 0px #fff)'};
