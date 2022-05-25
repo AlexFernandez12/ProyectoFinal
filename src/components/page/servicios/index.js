@@ -33,8 +33,8 @@ export default function Servicios() {
             <input type="submit" value="Enviar" className='enviar_mensaje' />
 
             <div className='contactar'>
-              <span class="fa fa-phone"></span>623 714 936
-              <span class="fa fa-envelope-o"></span> Medac@gmail.com
+              <div className='informacion'><span class="fa fa-phone"></span>623 714 936</div>
+              <div className='informacion'><span class="fa fa-envelope-o"></span>Medac@gmail.com</div> 
             </div>
           </form>
         </div>

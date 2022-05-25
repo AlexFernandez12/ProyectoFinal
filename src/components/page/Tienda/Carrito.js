@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Card from "images/img02.jpg";
 import { DataContext } from "context/DataProvider";
 import { DataContextHombreCamisetas } from "components/page/Tienda/hombre/camisetas/context/DataProviderHombreCamisetas";
+import { Link } from "react-router-dom";
 //import { DataContextMujer } from "context/DataProviderMujer";
 //import { DataContextHombre } from "context/DataProviderHombre";
 
@@ -98,7 +99,7 @@ export const Carrito = () => {
 
         <div className="carrito__footer">
           <h3>Total: {total}€</h3>
-          <a href="https://www.paypal.com/es/home"><button className="btn">Pagar</button></a>
+          <Link to={'/pago'}><button className="btn">Pagar</button></Link>
         </div>
       </div>
     </div>

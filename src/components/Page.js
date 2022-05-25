@@ -47,6 +47,8 @@ import { NinosZapatos } from "./page/Tienda/ninos/zapatos";
 import { Accesorios } from "./page/Tienda/accesorios";
 import { ProductosDetallesAccesorios } from "./page/Tienda/accesorios/ProductosDetallesAccesorios";
 
+import Pago from "./page/Tienda/pasarela_pago/pago";
+
 
 
 export default function Page() {
@@ -95,6 +97,8 @@ export default function Page() {
         
         <Route path="/accesorios" exact component={Accesorios} />
         <Route path="/accesorios/:id" exact component={ProductosDetallesAccesorios} />
+
+        <Route path="/pago" exact component={Pago} />
 
 
         <Route path="/productos/hombre" exact component={ProductosListHombre} />
