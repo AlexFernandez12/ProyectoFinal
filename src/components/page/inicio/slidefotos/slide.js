@@ -121,6 +121,7 @@ const Slide = styled.div`
 
 	img {
 		width: 100%;
+		height: 100%;
 		vertical-align: top;
 	}
 `;
@@ -129,7 +130,7 @@ const TextoSlide = styled.div`
 	background: ${props => props.colorFondo ? props.colorFondo : 'rgba(0,0,0,.3)'};
 	color: ${props => props.colorTexto ? props.colorTexto : '#fff'};
 	width: 100%;
-	padding: 10px 60px;
+	padding: 10px 1px;
 	text-align: center;
 	position: absolute;
 	bottom: 0;

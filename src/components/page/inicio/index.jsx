@@ -2,10 +2,10 @@ import React from 'react';
 import {Slideshow, Slide, TextoSlide} from '../inicio/slidefotos/slide';
 import './index.css';
 import styled from 'styled-components';
-import img1 from '../../../images/logo.jpg';
-import img2 from '../../../images/logo.jpg';
-import img3 from '../../../images/logo.jpg';
-import img4 from '../../../images/logo.jpg';
+import img1 from '../../../images/handsome.jpg';
+import img2 from '../../../images/mujer.jpg';
+import img3 from '../../../images/ninos.jpg';
+import img4 from '../../../images/pareja.jpg';
 import img5 from '../../../images/inicio.jpg';
 import { Link } from "react-router-dom";
 
@@ -27,25 +27,25 @@ const D = () => {
 					</TextoSlide>
 				</Slide>
 				<Slide>
-					<a href="https://www.falconmaters.com">
+					<Link to={'/mujer'}>
 						<img src={img2} alt=""/>
-					</a>
+					</Link>
 					<TextoSlide>
 						<p>MUJER</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
-					<a href="https://www.falconmaters.com">
+					<Link to={'/ninos'}>
 						<img src={img3} alt=""/>
-					</a>
+					</Link>
 					<TextoSlide>
 						<p>NIÑOS</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
-					<a href="https://www.falconmaters.com">
+					<Link to={'/accesorios'}>
 						<img src={img4} alt=""/>
-					</a>
+					</Link>
 					<TextoSlide>
 						<p>ACCESORIOS</p>
 					</TextoSlide>
