@@ -11,6 +11,7 @@ class Login extends React.Component {
     this.cambio = this.cambio.bind(this);
     this.insertar = this.insertar.bind(this);
     this.cambioPassword = this.cambioPassword.bind(this);
+    this.cambioEmail = this.cambioEmail.bind(this);
     this.iniciar = this.iniciar.bind(this);
   }
   cambio(event) {
@@ -33,7 +34,7 @@ class Login extends React.Component {
     datos.append('password', this.state.valor_password)
     datos.append('email', this.state.valor_email)
 
-    fetch("http://localhost/chat/login.php", {
+    fetch("login.php", {
       method: 'POST',
       body: datos
     })
@@ -56,7 +57,7 @@ class Login extends React.Component {
     datos.append('email', this.state.valor_email)
     //datos.append('usuario',localStorage.getItem('nombrar') )
 
-    fetch('${Constantes.RUTA_API}/Insertar_login.php', {
+    fetch('Insertar_login.php', {
       method: 'POST',
       body: datos
     })
