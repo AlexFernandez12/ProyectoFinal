@@ -12,7 +12,7 @@ $email = $_POST['email'];
         foreach($resultado as $opcion){
         $nombre=$opcion["Usuario"];
         $pass=$opcion["Contraseña"];
-        $id=$opcion["ID"];
+        $email=$opcion["Email"];
         if($usuario==$nombre && $password== $pass){
             echo json_encode("Funciona");
            

@@ -34,7 +34,7 @@ class Login extends React.Component {
     datos.append('password', this.state.valor_password)
     datos.append('email', this.state.valor_email)
 
-    fetch("login.php", {
+    fetch("sql109.epizy.com:3306/php/login.php", {
       method: 'POST',
       body: datos
     })
@@ -57,7 +57,7 @@ class Login extends React.Component {
     datos.append('email', this.state.valor_email)
     //datos.append('usuario',localStorage.getItem('nombrar') )
 
-    fetch('Insertar_login.php', {
+    fetch('sql109.epizy.com:3306/php/Insertar_login.php', {
       method: 'POST',
       body: datos
     })
