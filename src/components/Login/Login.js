@@ -2,7 +2,6 @@ import React from 'react';
 import "./login.css";
 import reactDom from 'react-dom';
 import Fondo from "../../images/login.jpg";
-
 class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -34,7 +33,8 @@ class Login extends React.Component {
     datos.append('password', this.state.valor_password)
     datos.append('email', this.state.valor_email)
 
-    fetch("anthonyboutique.42web.io/php/login.php", {
+
+    fetch("https://bellacomedac.000webhostapp.com/login.php", {
       method: 'POST',
       body: datos
     })
@@ -46,7 +46,7 @@ class Login extends React.Component {
         }
       },
         (error) => {
-          console.log('No es correcto');
+          console.log('El usuario y la contraseña no son correctos');
         }
       )
   }
@@ -57,7 +57,8 @@ class Login extends React.Component {
     datos.append('email', this.state.valor_email)
     //datos.append('usuario',localStorage.getItem('nombrar') )
 
-    fetch('anthonyboutique.42web.io/php/Insertar_login.php', {
+
+    fetch('https://bellacomedac.000webhostapp.com/Insertar_login.php', {
       method: 'POST',
       body: datos
     })
@@ -89,7 +90,7 @@ class Login extends React.Component {
               <input type="checkbox" id="chk" aria-hidden="true"></input>
 
                 <div class="signup">
-                  <form>
+                  <form method='POST' action='Insertar_login.php'>
                     <div className='etiqueta'><label for="chk" aria-hidden="true">Sign up</label></div>
                     <input type="text" name="usuario" placeholder="Usuario" required="" value={this.state.valor} onChange={this.cambio}></input>
                     <input type="email" name="email" placeholder="Correo electrónico" required="" value={this.state.valor_email} onChange={this.cambioEmail}></input>
@@ -98,7 +99,7 @@ class Login extends React.Component {
                   </form>
                 </div>
                 <div class="login">
-                  <form>
+                  <form method='POST' action='login.php'>
                     <div className='etiqueta'><label for="chk" aria-hidden="true">Login</label></div>
                     <input type="email" name="email" placeholder="Correo electrónico" required="" value={this.state.valor_email} onChange={this.cambioEmail}></input>
                     <input type="password" name="password" placeholder="Contraseña" required="" value={this.state.valor_password} onChange={this.cambioPassword}></input>
