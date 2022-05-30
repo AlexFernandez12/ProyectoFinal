@@ -34,7 +34,7 @@ class Login extends React.Component {
     datos.append('password', this.state.valor_password)
     datos.append('email', this.state.valor_email)
 
-    fetch("sql109.epizy.com:3306/php/login.php", {
+    fetch("anthonyboutique.42web.io/php/login.php", {
       method: 'POST',
       body: datos
     })
@@ -42,7 +42,7 @@ class Login extends React.Component {
       .then((result) => {
         if (result == 'Funciona') {
           localStorage.setItem("usuario", this.state.valor);
-          window.location.href = "/Chat";
+          window.location.href = "/";
         }
       },
         (error) => {
@@ -57,7 +57,7 @@ class Login extends React.Component {
     datos.append('email', this.state.valor_email)
     //datos.append('usuario',localStorage.getItem('nombrar') )
 
-    fetch('sql109.epizy.com:3306/php/Insertar_login.php', {
+    fetch('anthonyboutique.42web.io/php/Insertar_login.php', {
       method: 'POST',
       body: datos
     })

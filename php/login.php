@@ -10,9 +10,9 @@ $email = $_POST['email'];
     $resultado=mysqli_fetch_all($resultado,MYSQLI_ASSOC);
  
         foreach($resultado as $opcion){
-        $nombre=$opcion["Usuario"];
-        $pass=$opcion["Contraseña"];
-        $email=$opcion["Email"];
+        $nombre=$opcion["username"];
+        $pass=$opcion["contrasena"];
+        $email=$opcion["email"];
         if($usuario==$nombre && $password== $pass){
             echo json_encode("Funciona");
            
