@@ -25,22 +25,16 @@ body {
 
 .headgif img{
 	margin-top: 17px;
-	height: 105px;
+	height: 80px;
 } 
 
 h4 {
 	font-family: 'Courier New', Courier, monospace;
-	-webkit-transition: font-size .5s ease;
-  	-moz-transition: font-size .5s ease;
-  	-o-transition: font-size .5s ease;
   	transition: font-size .5s ease;
 }
 
 h2 {
 	font-family: 'Courier New', Courier, monospace;
-	-webkit-transition: font-size .5s ease;
-  	-moz-transition: font-size .5s ease;
-  	-o-transition: font-size .5s ease;
   	transition: font-size .5s ease;
 }
 
@@ -142,4 +136,27 @@ b{
 .bodytarjeta3{
 	font-family: Oxygen, sans-serif;
 	margin: 2rem;
+}
+
+@media screen and (max-width: 400px){
+	.slidefotos{
+		max-width: 330px;
+		margin-bottom: 125px;
+	}
+	
+	.fotopago{
+		height: 120px;
+		width: 120px;
+	}
+
+	.fotopago2{
+		height: 120px;
+		width: 120px;
+	}
+
+	.fotopago3{
+		height: 120px;
+		width: 120px;
+	}
+
 }

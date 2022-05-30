@@ -115,7 +115,6 @@ const Slide = styled.div`
 	min-width: 100%;
 	overflow: hidden;
 	transition: .3s ease all;
-	z-index: 10;
 	/* max-height: 500px; */
 	position: relative;
 
@@ -135,16 +134,15 @@ const TextoSlide = styled.div`
 	position: absolute;
 	bottom: 0;
 
-	@media screen and (max-width: 700px) {
-		position: relative;
-		background: #000;
-	}
+	// @media screen and (max-width: 700px) {
+	// 	position: relative;
+	// 	background: #000;
+	// }
 `;
 
 const Controles = styled.div`
 	position: absolute;
 	top: 0;
-	z-index: 20;
 	width: 100%;
 	height: 100%;
 	pointer-events: none;
@@ -161,6 +159,7 @@ const Boton = styled.button`
 	text-align: center;
 	position: absolute;
 	transition: .3s ease all;
+	
 	&:hover {
 		background: rgba(0,0,0,.2);
 		path {
