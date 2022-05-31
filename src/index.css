@@ -341,10 +341,6 @@ header ul li a{
     outline: 0;
     cursor: pointer;
 }
-.carrito__footer .btn:hover{
-    background-color: rgb(255, 0, 0);
-    color: cyan;
-}
 /*--------------DETALLES --------------*/
 .detalles{
     display: flex;
@@ -575,12 +571,12 @@ header ul li a{
 /* -------------MEDIA -------------*/
 @media only screen and (max-width: 1000px){
     .carrito__item{
-        width: 92%;
+        width: 90%;
     }
 }
 @media only screen and (max-width: 888px){ 
     .detalles input{
-        margin-top: -6rem;
+        margin-top: -1rem;
     }
 }
 @media only screen and (max-width: 700px){
@@ -595,6 +591,42 @@ header ul li a{
     .detalles h2{
         font-size: 3rem;
     }
+    .detalles .description{
+        font-size: 1.1rem;
+        max-width: 1300px;
+        width: 100%;
+        letter-spacing: 1px;
+        color: #5f5d5d;
+        font-weight: 500;
+        margin-top: -20px;
+    }
+    .detalles .description b{
+        font-size: 1.4rem;
+        color: #30333a;
+    }
+    .relacionados{
+        text-align: center;
+        background-color: #2e2e2e;
+        color: white;
+        max-width: 350px;
+        width: 80%;
+        margin: 1rem auto 0rem auto;
+        padding: .5rem 1rem;
+        font-size: 18px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-family: Helvetica, sans-serif
+        ;
+    }
+    .carrito__item .price{
+        color: #1a202c;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: start;
+        margin-left: 1px ;
+        margin-top: -1rem;
+    }
+    
     
 }
 @media only screen and (max-width: 663px){ 
@@ -630,8 +662,10 @@ header ul li a{
        
     }
     .carrito__item .remove__item{
-    width: 20px;
-    height: 20px;
+    width: 5px;
+    height: 5px;
+    margin-left: 75px;
+    margin-top: -22px;
     }
     .carrito__item box-icon{
     width: 25px;
@@ -639,14 +673,7 @@ header ul li a{
     }
     .detalles h2{
         font-size:2rem;
-        padding-top: 10rem ;
-    }
-    .detalles .grid > .nuevo, .tamano{
-    padding: 1rem 1rem;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: white;
+        padding-top: -1rem ;
     }
     .detalles .grid .tamano select{
         font-size: 1.2rem;
