@@ -44,7 +44,7 @@ export const Header = () => {
             className='nav-links'
             onClick={closeMobileMenu}
           >
-            Productos <i className='fas fa-caret-down' />
+            Productos
           </Link>
         </li>
         <li className='nav-item'>
