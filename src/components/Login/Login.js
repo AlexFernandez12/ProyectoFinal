@@ -90,7 +90,7 @@ class Login extends React.Component {
               <input type="checkbox" id="chk" aria-hidden="true"></input>
 
                 <div class="signup">
-                  <form method='POST' action='Insertar_login.php'>
+                  <form method="POST" action="Insertar_login.php" enctype="multipart/form-data">
                     <div className='etiqueta'><label for="chk" aria-hidden="true">Sign up</label></div>
                     <input type="text" name="usuario" placeholder="Usuario" required="" value={this.state.valor} onChange={this.cambio}></input>
                     <input type="email" name="email" placeholder="Correo electrónico" required="" value={this.state.valor_email} onChange={this.cambioEmail}></input>
@@ -99,7 +99,7 @@ class Login extends React.Component {
                   </form>
                 </div>
                 <div class="login">
-                  <form method='POST' action='login.php'>
+                  <form method="POST" action="login.php" enctype="multipart/form-data">
                     <div className='etiqueta'><label for="chk" aria-hidden="true">Login</label></div>
                     <input type="email" name="email" placeholder="Correo electrónico" required="" value={this.state.valor_email} onChange={this.cambioEmail}></input>
                     <input type="password" name="password" placeholder="Contraseña" required="" value={this.state.valor_password} onChange={this.cambioPassword}></input>
