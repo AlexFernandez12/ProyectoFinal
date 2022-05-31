@@ -14,13 +14,12 @@ import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import FormularioDirec from './formulario';
 import FormularioPago from './formulariopago';
-import Review from './review';
 
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" href="https://bellacomedac.000webhostapp.com/">
         Your Website
       </Link>{' '}
       {new Date().getFullYear()}
@@ -37,9 +36,6 @@ function getStepContent(step) {
       return <FormularioDirec />;
     case 1:
       return <FormularioPago />;
-    case 2:
-      return <Review />;
-    default:
       throw new Error('Unknown step');
   }
 }

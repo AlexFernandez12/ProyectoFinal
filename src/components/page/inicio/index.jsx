@@ -3,7 +3,7 @@ import {Slideshow, Slide, TextoSlide} from '../inicio/slidefotos/slide';
 import './index.css';
 import styled from 'styled-components';
 import img02 from '../../../images/inicio02.jpg';
-import img01 from '../../../images/handsome.jpg';
+import img01 from '../../../images/mujer.jpg';
 import img03 from '../../../images/inicio03.jpg';
 import img04 from '../../../images/inicio04.jpg';
 import headgif from '../../../images/descuento.svg';

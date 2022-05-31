@@ -84,34 +84,6 @@ a:hover{
 li{
     list-style: none;
 }
-.dropdown-menu {
-    position: absolute;
-    top: 80px;
-    list-style: none;
-    text-align: start;
-  }
-  
-  .dropdown-menu li {
-    background: #aaaaaa5d;
-    cursor: pointer;
-  }
-  
-  .dropdown-menu li:hover {
-    background: #5cabff;
-  }
-  
-  .dropdown-menu.clicked {
-    display: none;
-  }
-  
-  .dropdown-link {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    color: cyan;
-    padding: 16px;
-  }
 header ul{
     display: flex;
     justify-content: space-between;
@@ -156,8 +128,11 @@ header ul li a{
 
 /*----------- PRODUCTOS ------------*/
 .produ{
-    font-size: 2.4rem;  
-    color: cyan;
+    font-size: 1.6rem;  
+    text-shadow: -1px -1px 1px #aaa,
+    0px 4px 1px rgba(0,0,0,0.5),
+    4px 4px 5px rgba(0,0,0,0.7),
+    0px 0px 7px rgba(0,0,0,0.4);
 }
 .productos{
     padding: 5rem 3rem;
@@ -361,25 +336,25 @@ header ul li a{
     display: inline-block;
     padding: .3rem 1rem;
     font-size: 1.2rem;
-    background-color: cyan;
+    background-color: rgb(255, 0, 0);
     border: 0;
     outline: 0;
     cursor: pointer;
 }
 .carrito__footer .btn:hover{
-    background-color: cyan;
-    color: white;
+    background-color: rgb(255, 0, 0);
+    color: cyan;
 }
 /*--------------DETALLES --------------*/
 .detalles{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 13rem 1rem 0 1rem;
+    padding: 2rem 1rem 0 1rem;
     box-sizing: border-box;
 }
 .detalles h2{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     width: 100%;
     margin: 0 auto;
     font-family:Helvetica, sans-serif;
@@ -433,10 +408,6 @@ header ul li a{
     color: white;
    
 }
-.detalles .grid .nuevo{
-    background-color:cyan;
-    
-}
 .detalles .grid .tamano{
     background-color:#f1365b;
     display: flex;
@@ -452,7 +423,7 @@ header ul li a{
 .detalles img{
     min-height: 300px;
     object-fit: contain;
-    margin-top:  5rem;
+    margin-top:  -20rem;
     z-index: -1;
 }
 .detalles input{
@@ -467,8 +438,8 @@ header ul li a{
     width: 100%;
     letter-spacing: 1px;
     color: #5f5d5d;
-    margin: 0 auto;
     font-weight: 500;
+    margin-top: -220px;
 }
 .detalles .description b{
     font-size: 1.4rem;
