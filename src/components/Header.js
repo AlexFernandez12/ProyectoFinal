@@ -2,7 +2,6 @@ import React, { useContext, useState} from "react";
 import { DataContext } from "context/DataProvider";
 import { Link } from "react-router-dom";
 import Logo from "../images/bellaco.png";
-import Dropdown from "./Dropdown";
 import { BiCart } from "react-icons/bi";
 import "./Navbar.css"
 import { Button } from "./Login/Button";
@@ -13,26 +12,10 @@ export const Header = () => {
   const [menu, setMenu] = value.menu;
 
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-
-  const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
   const toogleMenu = () =>{
     setMenu(!menu)
   }
@@ -55,17 +38,14 @@ export const Header = () => {
         </li>
         <li
           className='nav-item'
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
         >
           <Link
-            to='/inicio'
+            to='/productos'
             className='nav-links'
             onClick={closeMobileMenu}
           >
             Productos <i className='fas fa-caret-down' />
           </Link>
-          {dropdown && <Dropdown />}
         </li>
         <li className='nav-item'>
           <Link
