@@ -136,11 +136,16 @@ b{
 	.slidefotos{
 		max-width: 330px;
 		margin-bottom: 125px;
+		margin-top: -50px;
+	}
+	.tarjeta1{
+		margin-top: -50px;
 	}
 	
 	.fotopago{
 		height: 120px;
 		width: 120px;
+
 	}
 
 	.fotopago2{
