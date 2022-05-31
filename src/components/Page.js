@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route} from "react-router-dom";
 import  Servicios  from "./page/servicios";
+import Services from "./page/services/services";
 import Login from "./Login/Login";
 import D from "./page/inicio/index";
 
@@ -20,6 +21,7 @@ export default function Page() {
         <Route path="/productos" exact component={ProductosList} />
         <Route path="/producto/:id" exact component={ProductosDetalles} />
         <Route path="/contacto" exact component={Servicios} />
+        <Route path="/services" exact component={Services} />
 
         <Route path="/pago" exact component={Pago} />
 

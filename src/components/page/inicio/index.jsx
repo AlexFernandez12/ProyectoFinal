@@ -3,7 +3,7 @@ import {Slideshow, Slide, TextoSlide} from '../inicio/slidefotos/slide';
 import './index.css';
 import styled from 'styled-components';
 import img02 from '../../../images/inicio02.jpg';
-import img01 from '../../../images/mujer.jpg';
+import img01 from '../../../images/servicios1.jpg';
 import img03 from '../../../images/inicio03.jpg';
 import img04 from '../../../images/inicio04.jpg';
 import headgif from '../../../images/descuento.svg';
@@ -27,12 +27,12 @@ const D = () => {
 	  </div>
 	  
       <div className='slidefotos'>		  
-			<Titulo>Categorías</Titulo>
+			<Titulo>Secciones</Titulo>
 			<Slideshow controles={true}>
 				<Slide>
 						<img src={img03} alt=""/>
 					<TextoSlide>
-						<p>BIENVENIDOS</p>
+						<p>BIENVENIDO A NUESTRA WEB</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
@@ -40,15 +40,15 @@ const D = () => {
 						<img src={img02} alt=""/>
 					</Link>
 					<TextoSlide>
-						<p>PRODUCTOS</p>
+						<p>	NUESTROS PRODUCTOS</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
-					<Link to={'/productos'}>
+					<Link to={'/services'}>
 						<img src={img01} alt=""/>
 					</Link>
 					<TextoSlide>
-						<p>PRODUCTOS</p>
+						<p>SERVICIOS QUE OFRECEMOS</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
@@ -56,7 +56,7 @@ const D = () => {
 						<img src={img04} alt=""/>
 					</Link>
 					<TextoSlide>
-						<p>REGISTRATE</p>
+						<p>INICIA SESIÓN O REGISTRATE</p>
 					</TextoSlide>
 				</Slide>
 			</Slideshow>
