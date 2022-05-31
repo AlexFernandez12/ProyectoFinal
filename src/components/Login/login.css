@@ -19,7 +19,7 @@
 	box-shadow: 5px 20px 50px #000;
 	margin-left: auto;
     margin-right: auto;
-	margin-bottom: 350px;
+	margin-bottom: 50px;
 }
 #chk{
 	display: none;
@@ -115,8 +115,12 @@ button:hover .registro{
     }
 	.todo{
 		display: contents;
+		
 	}
 	.sesion{
 		margin-top: 0%;
+	}
+	.main{
+		margin-top: 10px;
 	}
 }
