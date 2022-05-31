@@ -7,7 +7,7 @@ export default function Servicios() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_6z9klu3', 'template_0xvjt49', form.current, 'y--EKdEHLNw4fMDW4')
+    emailjs.sendForm('service_b1kg8db', 'template_0xvjt49', form.current, 'y--EKdEHLNw4fMDW4')
       .then((result) => {
           console.log(result.text);
           alert ("La petición ha sido enviada con éxito");
@@ -34,7 +34,7 @@ export default function Servicios() {
 
             <div className='contactar'>
               <div className='informacion'><span class="fa fa-phone"></span>623 714 936</div>
-              <div className='informacion'><span class="fa fa-envelope-o"></span>Medac@gmail.com</div> 
+              <div className='informacion'><span class="fa fa-envelope-o"></span>bellacomedac@gmail.com</div> 
             </div>
           </form>
         </div>
