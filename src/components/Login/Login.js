@@ -8,6 +8,7 @@ import {
   signOut,
 } from "firebase/auth";
 import { auth } from "./firebase-config";
+import { Link } from "react-router-dom";
 import "./login.css";
 import reactDom from 'react-dom';
 import Fondo from "../../images/login.jpg";
@@ -38,6 +39,7 @@ function Login() {
   };
 
   const login = async () => {
+    if(user=!"")
     try {
       const user = await signInWithEmailAndPassword(
         auth,
@@ -80,7 +82,7 @@ function Login() {
               <div className='etiqueta'><label for="chk" aria-hidden="true">Login</label></div>
               <input type="email" name="email" placeholder="Correo electrónico" required="" onChange={(event) => { setLoginEmail(event.target.value); }} />
               <input type="password" name="password" placeholder="Contraseña" required="" onChange={(event) => { setLoginPassword(event.target.value); }} />
-              <button onClick={login} className="registro">Iniciar</button>
+              <Link to='/'><button onClick={login} className="registro">Iniciar</button></Link>
 
             </form>
           </div>

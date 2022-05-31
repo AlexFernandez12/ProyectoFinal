@@ -70,7 +70,7 @@ export const ProductosDetalles = () => {
           </button>
           
           {
-            url ? <img src={images} alt={detalle.title}/> : <img src={detalle.image} alt={detalle.title}/>
+            url ? <img src={images} alt={detalle.title}/> : <img className='imagen2' src={detalle.image} alt={detalle.title}/>
           }
           <div className="description">
           <p><b>Descripción: </b></p>
