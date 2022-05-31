@@ -33,7 +33,7 @@ export const Header = () => {
       <ul className={click ? 'nav-menu active' : 'nav-menu'}>
         <li className='nav-item'>
           <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-            Home
+            Inicio
           </Link>
         </li>
         <li
