@@ -7,7 +7,7 @@ body {
 
 .slidefotos{
     margin-top: 50px;
-	max-width: 1300px;
+	max-width: 1000px;
 	margin: 25px auto;
 	margin-bottom: 200px;
 	overflow: hidden;
@@ -25,7 +25,7 @@ body {
 
 .headgif img{
 	margin-top: 17px;
-	height: 80px;
+	height: 60px;
 } 
 
 h4 {

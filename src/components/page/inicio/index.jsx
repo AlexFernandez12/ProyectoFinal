@@ -2,15 +2,15 @@ import React from 'react';
 import {Slideshow, Slide, TextoSlide} from '../inicio/slidefotos/slide';
 import './index.css';
 import styled from 'styled-components';
-import img1 from '../../../images/handsome.jpg';
-import img2 from '../../../images/mujer.jpg';
-import img3 from '../../../images/ninos.jpg';
-import img4 from '../../../images/pareja.jpg';
+import img02 from '../../../images/inicio02.jpg';
+import img01 from '../../../images/handsome.jpg';
+import img03 from '../../../images/inicio03.jpg';
+import img04 from '../../../images/inicio04.jpg';
 import headgif from '../../../images/descuento.svg';
 import pago from '../../../images/pagoseguro.svg';
 import devolucion from '../../../images/devolucion.svg';
 import recogida from '../../../images/recogida.svg';
-import img5 from '../../../images/inicio.jpg';
+
 import { Link } from "react-router-dom";
 
 
@@ -30,35 +30,33 @@ const D = () => {
 			<Titulo>Categorías</Titulo>
 			<Slideshow controles={true}>
 				<Slide>
-					<Link to={'/hombre'}>
-						<img src={img1} alt=""/>
-					</Link>
+						<img src={img03} alt=""/>
 					<TextoSlide>
-						<p>HOMBRE</p>
+						<p>BIENVENIDOS</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
-					<Link to={'/mujer'}>
-						<img src={img2} alt=""/>
+					<Link to={'/productos'}>
+						<img src={img02} alt=""/>
 					</Link>
 					<TextoSlide>
-						<p>MUJER</p>
+						<p>PRODUCTOS</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
-					<Link to={'/ninos'}>
-						<img src={img3} alt=""/>
+					<Link to={'/productos'}>
+						<img src={img01} alt=""/>
 					</Link>
 					<TextoSlide>
-						<p>NIÑOS</p>
+						<p>PRODUCTOS</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
-					<Link to={'/accesorios'}>
-						<img src={img4} alt=""/>
+					<Link to={'/login'}>
+						<img src={img04} alt=""/>
 					</Link>
 					<TextoSlide>
-						<p>ACCESORIOS</p>
+						<p>REGISTRATE</p>
 					</TextoSlide>
 				</Slide>
 			</Slideshow>
