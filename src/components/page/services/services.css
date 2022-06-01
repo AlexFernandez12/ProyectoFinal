@@ -1,45 +1,201 @@
-@import url("https:/fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700;&display=swap");
+/* Tarjeta 1 */
 
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+b{
+	font-size: 15px;
 }
 
-.cardBody{
-    font-family: Oxygen, sans-serif;
-    margin: 2rem;
+.fotopago{
+	height: 180px;
+	width: 180px;
 }
 
-.wrapper{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
-    gap: 2rem;
-    justify-content: center;
+.tarjeta1{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	box-shadow: 0 2px 20px black;
+	border-radius: 2px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: rgb(237,233,231);
+	background: linear-gradient(90deg, rgba(237,233,231,1) 0%, rgba(237,233,231,1) 20%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+} 
+
+.bodytarjeta{
+	font-family: Oxygen, sans-serif;
+	margin: 2rem;
 }
 
-.card{
-    overflow: hidden;
-    box-shadow: 0 2px 20px #e1e5ee;
-    border-radius: 0.2rem;
+.titulotarjeta{
+	padding: 1rem;
+}
+.descripcion{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 200ms ease-in;
+}
+/* Tarjeta 2 */
+
+
+.fotopago2{
+	height: 180px;
+	width: 180px;
 }
 
-.cardImage{
-    height: 12rem;
-    width: 110%;
-    object-fit: cover;
+.tarjeta2{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	box-shadow: 0 2px 20px black;
+	border-radius: 2px;
+	display: flex;
+	justify-content: right;
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(237,233,231,1) 80%, rgba(237,233,231,1) 100%);
+} 
+
+.bodytarjeta2{
+	font-family: Oxygen, sans-serif;
+	margin: 2rem;
 }
 
-.cardTittle{
-    padding: 1rem;
+.titulotarjeta2{
+	padding: 1rem;
 }
 
-.cardDescription{
-    padding: 0 1rem;
+/* Tarjeta 3 */
+
+.fotopago3{
+	height: 180px;
+	width: 180px;
+}
+
+.tarjeta3{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	box-shadow: 0 2px 20px black;
+	border-radius: 2px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: rgb(237,233,231);
+	background: linear-gradient(90deg, rgba(237,233,231,1) 0%, rgba(237,233,231,1) 20%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+} 
+
+.bodytarjeta3{
+	font-family: Oxygen, sans-serif;
+	margin: 2rem;
+}
+
+/* Tarjeta 4 */
+
+.fotopago4{
+	height: 180px;
+	width: 180px;
+}
+.tarjeta4{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	box-shadow: 0 2px 20px black;
+	border-radius: 2px;
+	display: flex;
+	justify-content: right;
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(237,233,231,1) 80%, rgba(237,233,231,1) 100%);
+} 
+
+.bodytarjeta4{
+	font-family: Oxygen, sans-serif;
+	margin: 2rem;
+}
+
+.titulotarjeta4 {
+	padding: 1rem;
+}
+
+/* Tarjeta 5 */
+
+.fotopago5{
+	height: 180px;
+	width: 180px;
+}
+
+.tarjeta5{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	box-shadow: 0 2px 20px black;
+	border-radius: 2px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: rgb(237,233,231);
+	background: linear-gradient(90deg, rgba(237,233,231,1) 0%, rgba(237,233,231,1) 20%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+} 
+
+.bodytarjeta5{
+	font-family: Oxygen, sans-serif;
+	margin: 2rem;
+}
+
+/* Tarjeta 6 */
+
+.fotopago6{
+	height: 180px;
+	width: 180px;
+}
+.tarjeta6{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	box-shadow: 0 2px 20px black;
+	border-radius: 2px;
+	display: flex;
+	justify-content: right;
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(237,233,231,1) 80%, rgba(237,233,231,1) 100%);
+} 
+
+.bodytarjeta6{
+	font-family: Oxygen, sans-serif;
+	margin: 2rem;
+}
+
+.titulotarjeta6 {
+	padding: 1rem;
+}
+
+@media screen and (max-width: 400px){
+	.slidefotos{
+		max-width: 330px;
+		margin-bottom: 125px;
+		margin-top: -50px;
+	}
+	.tarjeta1{
+		margin-top: -50px;
+	}
+	
+	.fotopago{
+		height: 120px;
+		width: 120px;
+
+	}
+
+	.fotopago2{
+		height: 120px;
+		width: 120px;
+	}
+
+	.fotopago3{
+		height: 120px;
+		width: 120px;
+	}
+
 }

@@ -5,11 +5,16 @@ import Logo from "../images/bellaco.png";
 import { BiCart } from "react-icons/bi";
 import "./Navbar.css"
 import { Button } from "./Login/Button";
+import LognInBoton from "./Login/LogninBoton";
+import LogoutButton from "./Login/LogOutBoton";
+import { getAuth } from "firebase/auth";
 
 export const Header = () => {
   const value = useContext(DataContext);
   const [carrito] = value.carrito;
   const [menu, setMenu] = value.menu;
+  const auth = getAuth();
+  const { isAuthenticated } =  getAuth();
 
   const [click, setClick] = useState(false);
 
@@ -66,13 +71,7 @@ export const Header = () => {
           </Link>
         </li>
         <li>
-          <Link
-            to='/login'
-            className='nav-links-mobile'
-            onClick={closeMobileMenu}
-          >
-            Sign Up
-          </Link>
+          {isAuthenticated ? <LognInBoton /> : <LogoutButton />}
         </li>
       </ul>
       <Button />

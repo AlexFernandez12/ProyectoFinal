@@ -1,66 +1,81 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
-import { useState } from "react";
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  onAuthStateChanged,
-  signOut,
-} from "firebase/auth";
+import { useState, useContext, useRef } from "react";
+import { getAuth, createUserWithEmailAndPassword , signInWithEmailAndPassword} from "firebase/auth";
 import { auth } from "./firebase-config";
-import { Link } from "react-router-dom";
 import "./login.css";
-import reactDom from 'react-dom';
 import Fondo from "../../images/login.jpg";
+import { UserContext } from "./UserProvider";
+
+
 function Login() {
 
-  const [registerEmail, setRegisterEmail] = useState("");
-  const [registerPassword, setRegisterPassword] = useState("");
-  const [loginEmail, setLoginEmail] = useState("");
-  const [loginPassword, setLoginPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const [user, setUser] = useState({});
 
-  onAuthStateChanged(auth, (currentUser) => {
-    setUser(currentUser);
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
+  const emailRef1 = useRef(null);
+  const passwordRef1 = useRef(null);
+
+  const [initializing, setInitializing] = useState(true);
+  const [user, setUser] = useState();
+
+  // Handle user state changes
+  function onAuthStateChanged(user) {
+    setUser(user);
+    if (initializing) setInitializing(false);
+  }
+
+
+  
+
+
+
+  const signUp = e => {
+    e.preventDefault();
+    const auth = getAuth();
+      createUserWithEmailAndPassword(auth, emailRef.current.value, passwordRef.current.value)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          alert(user.email)
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          alert(error)
+          alert(errorCode)
+          alert(errorMessage)
+          // ..
   });
+}
+  const signIn = e => {
 
-  const register = async () => {
-    try {
-      const user = await createUserWithEmailAndPassword(
-        auth,
-        registerEmail,
-        registerPassword
-      );
-
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
-
-  const login = async () => {
-    if(user=!"")
-    try {
-      const user = await signInWithEmailAndPassword(
-        auth,
-        loginEmail,
-        loginPassword
-      );
-
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
-
-  const logout = async () => {
-    await signOut(auth);
-  };
-
-
+    e.preventDefault();
+      const auth = getAuth();
+      signInWithEmailAndPassword(auth, emailRef1.current.value, passwordRef1.current.value)
+        .then((userCredential) => {
+          // Signed in
+          
+          const user = userCredential.user;
+          alert(user.email)
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          alert(error)
+          alert(errorCode)
+          alert(errorMessage)
+        });
+}
 
 
 
   return (
+
     <div className='todo'>
       <div className='izq_log'>
         <img src={Fondo}></img>
@@ -70,19 +85,19 @@ function Login() {
           <input type="checkbox" id="chk" aria-hidden="true"></input>
 
           <div class="signup">
-            <form>
+            <form action="">
               <div className='etiqueta'><label for="chk" aria-hidden="true">Sign up</label></div>
-              <input type="email" name="email" placeholder="Correo electrónico" required="" onChange={(event) => { setRegisterEmail(event.target.value); }} />
-              <input type="password" name="password" placeholder="Contraseña" required="" onChange={(event) => { setRegisterPassword(event.target.value); }} />
-              <button onClick={register} className="registro">Registrarse</button>
+              <input type="email" name="email" placeholder="Ingrese email" ref={emailRef}/>
+              <input type="password" name="password" placeholder="Contraseña" required="" ref={passwordRef}/>
+              <button className='registro'  onClick={signUp}>Register</button>
             </form>
           </div>
           <div class="login">
-            <form>
+            <form action="">
               <div className='etiqueta'><label for="chk" aria-hidden="true">Login</label></div>
-              <input type="email" name="email" placeholder="Correo electrónico" required="" onChange={(event) => { setLoginEmail(event.target.value); }} />
-              <input type="password" name="password" placeholder="Contraseña" required="" onChange={(event) => { setLoginPassword(event.target.value); }} />
-              <Link to='/'><button onClick={login} className="registro">Iniciar</button></Link>
+               <input type="email" name="email" placeholder="Ingrese email" ref={emailRef1}/>
+              <input type="password" name="password" placeholder="Contraseña" required="" ref={passwordRef1}/>
+              <button className='registro' onClick={signIn}>Login</button>
 
             </form>
           </div>
@@ -91,7 +106,7 @@ function Login() {
       </div>
     </div>
   );
-
+  
 
 }
 export default Login;
