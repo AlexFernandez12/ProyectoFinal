@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { getAuth, createUserWithEmailAndPassword , signInWithEmailAndPassword} from "firebase/auth";
 import { auth } from "./firebase-config";
 import "./login.css";
+import { Link } from "react-router-dom";
 import Fondo from "../../images/login.jpg";
 
 
@@ -19,7 +20,7 @@ function Login() {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          alert(user.email)
+          alert("El correo registrado es: " +user.email)
           // ...
         })
         .catch((error) => {
@@ -37,7 +38,7 @@ function Login() {
           // Signed in
           
           const user = userCredential.user;
-          alert(user.email)
+          alert("El correo logueado es: "+user.email)
           // ...
         })
         .catch((error) => {
@@ -71,7 +72,7 @@ function Login() {
               <div className='etiqueta'><label htmlFor="chk" aria-hidden="true">Login</label></div>
                <input type="email" name="email" placeholder="Ingrese email" ref={emailRef1}/>
               <input type="password" name="password" placeholder="Contraseña" required="" ref={passwordRef1}/>
-              <button className='registro' onClick={signIn}>Login</button>
+              <Link to='/'><button className='registro' onClick={signIn}>Login</button></Link>
 
             </form>
           </div>

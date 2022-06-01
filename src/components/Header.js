@@ -5,8 +5,6 @@ import Logo from "../images/bellaco.png";
 import { BiCart } from "react-icons/bi";
 import "./Navbar.css"
 import { Button } from "./Login/Button";
-import LognInBoton from "./Login/LogninBoton";
-import LogoutButton from "./Login/LogOutBoton";
 import { getAuth } from "firebase/auth";
 
 export const Header = () => {
@@ -70,7 +68,9 @@ export const Header = () => {
           </Link>
         </li>
         <li className='nav-item'>
-          <Link to='/login' className='nav-links-mobile'>
+          <Link to='/login' 
+          className='nav-links-mobile'
+          onClick={closeMobileMenu}>
             Sign Up
           </Link>
         </li>
