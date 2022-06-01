@@ -73,34 +73,3 @@ export default function Services() {
   )
 }
 
-function Tarjeta(props){
-
-  return(
-    <div>
-      <div className='tarjeta1'>
-        <div className='bodytarjeta'>
-          <img className='fotopago' src={cliente} alt="" />
-          <h2 className='titulotarjeta'>Atención al cliente</h2>
-          <p className='descripciontarjeta'><b>El servicio al cliente es una parte vital de este ciclo de vida y es un aspecto de gran importancia para nuestro negocio. Sin embargo, muchas compañías no están preparadas para manejar las solicitudes de sus clientes de forma eficiente. Por ello, ofrecerle a tus clientes asesoría sobre cómo implementar una plataforma de servicio al cliente efectiva, representa una excelente oportunidad de upsell en cualquier proyecto de Ecommerce.</b></p>
-        </div>
-      </div> 
-
-      
-      <div className='tarjeta2'>
-        <div className='bodytarjeta2'>
-          <img className='fotopago2' src={email} alt="" />
-          <h2 className='titulotarjeta2'>Email transaccional</h2>
-          <p className='descripciontarjeta2'><b>Después de los emails informativos más personales, tenemos los emails transaccionales, que son aquellos que se generan de forma automática con cada venta que realizas, siendo el email de «confirmación de la orden» el más común. Los emails transaccionales no tienen porqué ser aburridos, de hecho, cada correo que envía la tienda representa una excelente oportunidad de interactuar con el cliente y sirve como otra extensión de la marca de la compañía.</b></p>
-        </div>
-      </div>
-
-      <div className='tarjeta3'>
-        <div className='bodytarjeta3'>
-          <img className='fotopago3' src={camara} alt="" />
-          <h2 className='titulotarjeta3'>Fotografía de producto</h2>
-          <p className='descripciontarjeta3'><b>¿Cuántas veces has entrado en una tienda online y haz hecho clic en una foto, esperando ver una imagen en alta resolución del producto, para sólo ver un thumbnail o imagen miniatura aparecer en un lightbox? Estamos seguros que no somos los únicos al que le molesta esto. Las fotos de excelente calidad de los productos son clave para ofrecer a los compradores tanta información acerca del producto como sea posible.</b></p>
-        </div>
-      </div> 
-    </div>
-  )
-}

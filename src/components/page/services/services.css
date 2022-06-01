@@ -178,9 +178,6 @@ b{
 		margin-bottom: 125px;
 		margin-top: -50px;
 	}
-	.tarjeta1{
-		margin-top: -50px;
-	}
 	
 	.fotopago{
 		height: 120px;
@@ -194,6 +191,18 @@ b{
 	}
 
 	.fotopago3{
+		height: 120px;
+		width: 120px;
+	}
+	.fotopago4{
+		height: 120px;
+		width: 120px;
+	}
+	.fotopago5{
+		height: 120px;
+		width: 120px;
+	}
+	.fotopago6{
 		height: 120px;
 		width: 120px;
 	}

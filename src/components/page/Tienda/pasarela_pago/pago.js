@@ -3,7 +3,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Toolbar from '@mui/material/Toolbar';
 import Paper from '@mui/material/Paper';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
@@ -36,7 +35,6 @@ function getStepContent(step) {
       return <FormularioDirec />;
     case 1:
       return <FormularioPago />;
-      throw new Error('Unknown step');
   }
 }
 

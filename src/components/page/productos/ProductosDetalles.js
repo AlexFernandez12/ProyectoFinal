@@ -31,10 +31,7 @@ export const ProductosDetalles = () => {
     setImages(values) 
   },[url, params.id])
 
-  const handleInput = (e) =>{
-  const number = e.target.value.toString().padStart(2,'01')
-   setUrl(number)
-  }
+
 
   if(detalle.length < 1) return null;
 
@@ -44,27 +41,6 @@ export const ProductosDetalles = () => {
         <div className="detalles">
           <h2>{detalle.title}</h2>
           <p className="price">{detalle.price}€</p>
-          <div className="grid">
-          <div className="tamano">
-            <select placeholder="Talla" >
-              <option value="1">32</option>
-              <option value="1">33</option>
-              <option value="1">34</option>
-              <option value="1">35</option>
-              <option value="1">36</option>
-              <option value="1">37</option>
-              <option value="1">38</option>
-              <option value="1">39</option>
-              <option value="1">40</option>
-              <option value="1">41</option>
-              <option value="1">42</option>
-              <option value="1">43</option>
-              <option value="1">44</option>
-              <option value="1">45</option>
-            </select>
-            <p>Talla</p>
-          </div>
-          </div>
           <button onClick={() => addCarrito(detalle.id)}>
             Añadir al carrito
           </button>

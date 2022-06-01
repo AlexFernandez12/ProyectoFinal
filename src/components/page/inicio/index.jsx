@@ -18,7 +18,6 @@ const D = () => {
 	return (
 
 		<main>
-      {/* <img src={img5} alt=""/> */}
 	  <div className='headgif'>
 	  		<img src={headgif} alt="" />
 			  <h2 className='envio'>Envío gratis en pedidos de +70€ &nbsp;</h2>

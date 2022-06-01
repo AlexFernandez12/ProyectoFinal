@@ -1,36 +1,16 @@
 import React from 'react';
-import { useState, useContext, useRef } from "react";
+import { useRef } from "react";
 import { getAuth, createUserWithEmailAndPassword , signInWithEmailAndPassword} from "firebase/auth";
 import { auth } from "./firebase-config";
 import "./login.css";
 import Fondo from "../../images/login.jpg";
-import { UserContext } from "./UserProvider";
 
 
 function Login() {
-
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
   const emailRef1 = useRef(null);
   const passwordRef1 = useRef(null);
-
-  const [initializing, setInitializing] = useState(true);
-  const [user, setUser] = useState();
-
-  // Handle user state changes
-  function onAuthStateChanged(user) {
-    setUser(user);
-    if (initializing) setInitializing(false);
-  }
-
-
-  
-
-
 
   const signUp = e => {
     e.preventDefault();
@@ -45,9 +25,6 @@ function Login() {
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
-          alert(error)
-          alert(errorCode)
-          alert(errorMessage)
           // ..
   });
 }
@@ -66,9 +43,6 @@ function Login() {
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
-          alert(error)
-          alert(errorCode)
-          alert(errorMessage)
         });
 }
 
@@ -81,20 +55,20 @@ function Login() {
         <img src={Fondo}></img>
       </div>
       <div className='der_log'>
-        <div class="main">
+        <div className="main">
           <input type="checkbox" id="chk" aria-hidden="true"></input>
 
-          <div class="signup">
+          <div className="signup">
             <form action="">
-              <div className='etiqueta'><label for="chk" aria-hidden="true">Sign up</label></div>
+              <div className='etiqueta'><label htmlFor="chk" aria-hidden="true">Sign up</label></div>
               <input type="email" name="email" placeholder="Ingrese email" ref={emailRef}/>
               <input type="password" name="password" placeholder="Contraseña" required="" ref={passwordRef}/>
               <button className='registro'  onClick={signUp}>Register</button>
             </form>
           </div>
-          <div class="login">
+          <div className="login">
             <form action="">
-              <div className='etiqueta'><label for="chk" aria-hidden="true">Login</label></div>
+              <div className='etiqueta'><label htmlFor="chk" aria-hidden="true">Login</label></div>
                <input type="email" name="email" placeholder="Ingrese email" ref={emailRef1}/>
               <input type="password" name="password" placeholder="Contraseña" required="" ref={passwordRef1}/>
               <button className='registro' onClick={signIn}>Login</button>

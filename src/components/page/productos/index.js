@@ -2,15 +2,9 @@ import React, {useContext, useState} from 'react'
 import { DataContext } from "context/DataProvider";
 import { ProductoItem } from "./ProductoItem";
 import  Lista from "./Lista"
-import  Select  from 'react-select';
 export const ProductosList = () => {
 	const value = useContext(DataContext)
 	const [productos] = value.productos;
-	const Sexo = [
-		{ label: 'Hombre', value: 1 },
-		{ label: 'Mujer', value:'mujer' },
-		{ label: 'Accesorios', value: 'accesorios' }
-	]
 	const [addrtype, setAddrType] = useState('Home')
     
 	function handleAddrTypeChange(e) {
@@ -25,7 +19,7 @@ export const ProductosList = () => {
   defaultValue={addrtype}
   onChange={handleAddrTypeChange}
   className="browser-default custom-select">
-    
+  <option value="Home">Todos</option>
   <option value="hombre">Hombre</option>
   <option value="mujer">Mujer</option>
   <option value="zapatos">Zapatos</option>

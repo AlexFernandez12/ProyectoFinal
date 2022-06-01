@@ -13,7 +13,6 @@ export const Header = () => {
   const value = useContext(DataContext);
   const [carrito] = value.carrito;
   const [menu, setMenu] = value.menu;
-  const auth = getAuth();
   const { isAuthenticated } =  getAuth();
 
   const [click, setClick] = useState(false);
@@ -70,8 +69,10 @@ export const Header = () => {
             Contacto
           </Link>
         </li>
-        <li>
-          {isAuthenticated ? <LognInBoton /> : <LogoutButton />}
+        <li className='nav-item'>
+          <Link to='/login' className='nav-links-mobile'>
+            Sign Up
+          </Link>
         </li>
       </ul>
       <Button />
